@@ -67,3 +67,62 @@ a:hover {
 
 
 /* Willan */
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding:20px;
+        }
+
+        #delete-branch, #next-steps, #congrats {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;margin-left: 0%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        #delete-branch h2, #next-steps h2 {
+            font-size: 1.5;
+            margin-top: 0;
+           
+
+        }
+
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+
+        ul {
+            padding-left: 20px;
+            
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            
+            
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        #congrats p {
+            font-style: italic;
+            color: #555;
+            font-size: 56;
+            
+        }
+
+
+

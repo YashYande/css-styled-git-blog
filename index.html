@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everyday Git</title>
+</head>
+<body>
+    <h1><u>Everyday Git</u></h1>
+
+    <ol>
+        <!-- Amon -->
+        <div id="get-started">
+            <li>
+                <h2>Get Started</h2>
+                <p>To begin, create a folder for your project. Inside that folder, create all necessary files and folders. Use any code editor like VS Code, Sublime Text, or Atom to edit your files.</p>
+            </li>
+        </div>
+
+        <div id="what-is-git">
+            <li>
+                <h2>What is Git?</h2>
+                <p>
+                    Git is a distributed version control system (VCS) that helps developers track changes in their code over time. It allows multiple developers to collaborate without overwriting each other’s work and provides the ability to revert to previous versions of a project.
+                </p>
+                <p>
+                    This blog will focus on using Git and its popular hosting platform, GitHub.
+                </p>
+            </li>
+        </div>
+
+        <div id="install-git">
+            <li>
+                <h2>Installing Git</h2>
+                <p>
+                    To check if Git is installed on your computer, open your terminal or command prompt and run:
+                    <pre>git --version</pre>
+                    If Git is not installed, download and install it from 
+                    <pre><a href="https://git-scm.com/downloads" target="_blank">https://git-scm.com/downloads</a></pre>
+                    <img src="./images/git-version.png" alt="">
+                    
+                </p>
+                <p>Follow the instructions for your operating system (Windows, macOS, or Linux).</p>
+            </li>
+        </div>
+
+        <!-- Ian -->
+        <div id="config-git">
+            <li>
+                <h2>Configuring Git</h2>
+                <p>
+                    After installing Git, configure your identity with the following commands:
+                    <pre>git config --global user.name "Your Name"
+                    git config --global user.email "you@example.com"
+                    </pre>
+                </p>
+                <p>This configuration will associate your commits with your name and email address.</p>
+                <img src="./images/git-configs.png" alt="" width="600px">
+            </li>
+        </div>
+
+        <div id="git-init">
+            <li>
+                <h2>Initializing a git repository</h2>
+                <p>A Git repository is where Git stores your project’s history. To start using Git in a folder, run the following command inside the folder:</p>
+                <pre>git init</pre>
+                <p>This creates a hidden <code>.git</code> folder that tracks changes in your project.</p>
+                <img src="./images/git-init.png" alt="">
+            </li>
+        </div>
+
+        <div id="stage-files">
+            <li>
+                <h2>Adding Files to the Staging Area</h2>
+                <div>
+                    <p>
+                        The staging area is a place where you prepare files before committing them. To add a specific file to the staging area, use:
+                    </p>
+                    <pre>git add filename </pre>
+                </div>
+                <div>
+                    <p>
+                    To add all files at once:
+                    </p>
+                    <pre>git add .</pre>
+                </div>
+                <img src="./images/git-add.png" alt="">
+            </li>
+        </div>
+
+        <!-- John -->
+        <div id="commit-changes">
+            <li>
+                <h2>Committing Changes</h2>
+            <p>
+                Once files are staged, commit them using:
+
+                <pre>git commit -m "descriptive commit message"</pre>
+
+                Commit messages should be meaningful and concise. For example:
+
+                <pre>git commit -m "Add login form and validation"</pre>
+
+                To view your commit history:
+
+                <pre>git log</pre>
+            </p>
+            <img src="./images/git-commit.png" alt="">
+            </li>
+        </div>
+
+        <div id="branches">
+            <li>
+                <h2>Branches</h2>
+                <p>
+                    Branches in Git allow you to work on different features or versions of a project separately.
+                </p>
+                <p>
+                    This way, you can experiment without affecting the main codebase.
+                </p>
+                <p>
+                    Once changes are ready, they can be merged back.
+                </p>
+            </li>
+        </div>
+
+        <div id="create-branch">
+            <li>
+                <h2>Creating branches</h2>
+                <p>
+                    To create a new branch:
+
+                    <pre>git branch CSS-Styling</pre>
+
+                    This creates a new branch called CSS-Styling.
+                </p>
+                <img src="./images/git-branch.png" alt="">
+            </li>
+        </div>
+
+        <!-- Brian -->
+        <div id="view-branches">
+            <li>
+                <h2>View all branches</h2>
+                <p>
+                    To see all branches in your repository and check which one is currently active:
+                    <pre>git branch</pre>
+                </p>
+                <p>
+                    The active branch will be highlighted with an asterisk *.
+                </p>
+                <img src="./images/view-all-branches.png" alt="">
+            </li>
+        </div>
+
+        <div id="switch-branches">
+            <li>
+                <h2>Switching between branches</h2>
+                <div>
+                    <p>To switch to another branch:</p>
+                    <pre>git checkout branch-name</pre>
+                    <p>
+                        This updates your working directory to match the selected branch.
+                    </p>
+                    <img src="./images/switching-branches.png" />
+                </div>
+            </li>
+        </div>
+
+        <div id="merge-branch">
+            <li>
+                <h2>Merging a branch</h2>
+                <p>
+                    To merge changes from one branch into the current branch:
+
+                    <pre>git merge branch name</pre>
+
+                    This incorporates the changes from the named branch into the branch you're currently on.
+                </p>
+                <img src="./images/git-merge.png" alt="">
+            </li>
+        </div>
+
+        <!-- Willan -->
+        <div id="delete-branch">
+            <li>
+                <h2>Deleting a branch</h2>
+                <p>
+                    Once a feature branch is merged, you can delete it to keep things tidy:
+
+                    <pre>git branch -d branch-name</pre>
+
+                    Use -D instead of -d if the branch hasn’t been merged yet and you want to force-delete it.
+                </p>
+                <img src="./images/delete-branch.png" alt="">
+            </li>
+        </div>
+
+        <div id="next-steps">
+            <li>
+                <h2>Next steps</h2>
+                <ul>
+                    <li>Learn how to use remote repositories with Github and Gitlab</li>
+                    <li>Practice making pull requests and collaborating with others</li>
+                    <li>Explore advanced command such as <code>stash</code> and <code>rebase</code></li>
+                    <li>Use git inside code editors like VSCode</li>
+                </ul>
+                <p>Keep practicing, you got this</p>
+            </li>
+        </div>
+
+        <div id="congrats">
+            <p> <i>Hehe, you made it to the end of this git-essntials tutorial.</i></p>
+            <p><i>I am proud of you King and Queen. Happy Coding</i></p>
+        </div>
+    </ol>
+</body>
+</html>

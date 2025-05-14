@@ -9,3 +9,5 @@ This is a beginner's guide to the fundamentals of Git and version control.
 |--------------|-----------------|--------------|
 | Amon Victor   | arman-develops   | Styled sections numbered 1 to 3 |
 |Brian Nyairo | brianz-man | styled sections numbered 9 to 12|
+|Ronny Ian | YashYande | styled sections numbered 4 to 7|
+

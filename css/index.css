@@ -29,6 +29,23 @@ a:hover {
 
 
 /* Ian */
+#config-git , #git-init , #stage-files{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    font-weight: 500;   
+}
+#git-init{
+
+}
+
+#config-git h2,#git-init h2, #stage-files h2 {
+    text-decoration:underline;
+}
+#git-config p, #git-init p, #stage-files p{
+    font-size: 28px;
+    color:brown
+}
+
 
 
 /* John */

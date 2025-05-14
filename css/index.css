@@ -1,5 +1,7 @@
 /* Globals */
 
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
 body {
     background-image: linear-gradient(rgb(241, 241, 241), rgb(221, 240, 240));
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -24,19 +26,40 @@ a:hover {
     color: rgb(255, 160, 132);
 }
 
-
 /* Amon */
 
+#getting-started {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 2px solid rgb(214, 210, 210);
+    border-left: none;
+    border-right: none;
+}
 
-/* Ian */
+#getting-started p {
+    font-size: 20px;
+    color: #3b1912;
+}
 
+#getting-started a {
+    transition: color 0.5s;
+}
 
-/* John */
+#get-started h2,
+#what-is-git h2,
+#install-git h2 {
+    text-decoration: underline;
+}
 
+#install-git pre {
+    background-color: rgb(216, 218, 212);
+    max-width: fit-content;
+    padding: 2px 6px;
+    border-radius: 7px;
+}
 
 /* Brian */
-
-
 /*  styling for all sections in the div*/
 
 #view-branches,
@@ -96,72 +119,6 @@ a:hover {
     line-height: 1.6;
     margin-bottom: 0.6px;
 }
-
-
-/* Willan */
-
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-
-/* Globals */
-
-body {
-    background-image: linear-gradient(rgb(241, 241, 241), rgb(221, 240, 240));
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-h1 {
-    font-size: xx-large;
-    text-align: center;
-    color: rgb(230, 64, 14);
-}
-
-h2 {
-    color: rgb(236, 108, 69);
-}
-
-img {
-    border: 1px solid rgb(247, 176, 176);
-    border-radius: 6px;
-}
-
-a:hover {
-    color: rgb(255, 160, 132);
-}
-
-
-/* Amon */
-
-#getting-started {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    border: 2px solid rgb(214, 210, 210);
-    border-left: none;
-    border-right: none;
-}
-
-#getting-started p {
-    font-size: 20px;
-    color: #3b1912;
-}
-
-#getting-started a {
-    transition: color 0.5s;
-}
-
-#get-started h2,
-#what-is-git h2,
-#install-git h2 {
-    text-decoration: underline;
-}
-
-#install-git pre {
-    background-color: rgb(216, 218, 212);
-    max-width: fit-content;
-    padding: 2px 6px;
-    border-radius: 7px;
-}
-
 
 /* Ian */
 
